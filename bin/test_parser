@@ -1,0 +1,17 @@
+require 'test-parser'
+require 'yaml'
+def usage
+  puts "usage: test_parser <test_framework>"
+  puts "  frameworks:"
+  TestParser.parsers.each {|p,_| puts "    #{p}"}
+  exit 1
+end
+
+usage if !ARGV[0]
+parser = TestParser.parsers[ARGV[0].to_sym]
+usage if !parser
+
+
+
+puts YAML.dump(parser.parse(STDIN.read))
+

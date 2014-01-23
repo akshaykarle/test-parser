@@ -1,0 +1,22 @@
+== 0.0.1 2007-07-01
+
+* 1 major enhancement:
+  * Initial release
+
+== 0.8.0 2007-08-01
+
+* 4 major enhancements:
+  * Support for rspec
+  * Support for rubyunit
+  * Support for pyunit
+  * Support for quickCheck
+  
+== 0.9.0
+
+* 1 major enhancement:
+  * Initial support for junit
+
+== 0.11.0
+
+* 1 major enhancement:
+  * Initial support for cutest
